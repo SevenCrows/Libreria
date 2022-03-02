@@ -10,7 +10,7 @@
     using Libreria.Transversal.Acciones.Repositorio;
     using Libreria.Transversal.DTO.Repositorio;
     using Libreria.Utilitario.Base;
-    using Libreria.Utilitario.BD;
+    using Libreria.Utilitario.Control.BD;
     using Microsoft.EntityFrameworkCore;
 
     public class AutorDAL : ControlDatos<ContextoLibreria>, IAutorAccion
@@ -28,6 +28,7 @@
             {
                 Autor entidad = Mapeador.MapearEntidadDTO(AutorDTO, new Autor());
                 await this.contexto.Set<Autor>().AddAsync(entidad);
+                contexto.SaveChanges();
                 return entidad;
             });
         }

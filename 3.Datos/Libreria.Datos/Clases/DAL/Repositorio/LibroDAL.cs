@@ -10,7 +10,7 @@
     using Libreria.Transversal.Acciones.Repositorio;
     using Libreria.Transversal.DTO.Repositorio;
     using Libreria.Utilitario.Base;
-    using Libreria.Utilitario.BD;
+    using Libreria.Utilitario.Control.BD;
     using Microsoft.EntityFrameworkCore;
 
     public class LibroDAL : ControlDatos<ContextoLibreria>, ILibroAccion
@@ -28,6 +28,7 @@
             {
                 Libro entidad = Mapeador.MapearEntidadDTO(libroDTO, new Libro());
                 await this.contexto.Set<Libro>().AddAsync(entidad);
+                contexto.SaveChanges();
                 return entidad;
             });
         }

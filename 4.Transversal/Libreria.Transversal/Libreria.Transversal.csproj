@@ -8,4 +8,8 @@
     <Folder Include="DTO\Negocio\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\5.Utilitario\Libreria.Utilitario\Libreria.Utilitario.csproj" />
+  </ItemGroup>
+
 </Project>

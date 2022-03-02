@@ -1,4 +1,4 @@
-﻿namespace Libreria.Utilitario.Negocio
+﻿namespace Libreria.Utilitario.Control.Negocio
 {
     using System;
     using System.Text;
