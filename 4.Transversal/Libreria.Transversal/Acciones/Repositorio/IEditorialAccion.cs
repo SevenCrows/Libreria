@@ -11,6 +11,7 @@
     {
         Task<IEditorialDTO> AgregarEditorial(IEditorialDTO editorialDTO);
         Task<List<IEditorialDTO>> ConsultarListaEditorialPorFiltro(Expression<Func<IEditorialDTO, bool>> filtro);
+        Task<IEditorialDTO> EditarEditorial(IEditorialDTO editorialDTO);
     }
 
     public interface IEditorialNegocioAccion

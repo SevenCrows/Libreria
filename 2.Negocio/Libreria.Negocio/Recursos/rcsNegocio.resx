@@ -117,10 +117,28 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="MsgAutorExistente" xml:space="preserve">
+    <value>El autor con identificación %s ya existe en el sistema.</value>
+  </data>
+  <data name="MsgAutorNoExiste" xml:space="preserve">
+    <value>El autor no está registrado</value>
+  </data>
   <data name="MsgCreacionError" xml:space="preserve">
     <value>Se presento un error al almacenar la información</value>
   </data>
   <data name="MsgCreacionExitosa" xml:space="preserve">
     <value>Registros almacenados correctamente</value>
+  </data>
+  <data name="MsgEditorialExistente" xml:space="preserve">
+    <value>El editorial con código %s ya existe en el sistema.</value>
+  </data>
+  <data name="MsgEditorialNoExiste" xml:space="preserve">
+    <value>La editorial no está registrada</value>
+  </data>
+  <data name="MsgLibroExistente" xml:space="preserve">
+    <value>El libro con código %s ya existe en el sistema.</value>
+  </data>
+  <data name="MsgMaximoAlcanzado" xml:space="preserve">
+    <value>No es posible registrar el libro, se alcanzó el máximo permitido.</value>
   </data>
 </root>

@@ -61,6 +61,24 @@ namespace Libreria.Negocio.Recursos {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a El autor con identificación %s ya existe en el sistema..
+        /// </summary>
+        public static string MsgAutorExistente {
+            get {
+                return ResourceManager.GetString("MsgAutorExistente", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a El autor no está registrado.
+        /// </summary>
+        public static string MsgAutorNoExiste {
+            get {
+                return ResourceManager.GetString("MsgAutorNoExiste", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Se presento un error al almacenar la información.
         /// </summary>
         public static string MsgCreacionError {
@@ -75,6 +93,42 @@ namespace Libreria.Negocio.Recursos {
         public static string MsgCreacionExitosa {
             get {
                 return ResourceManager.GetString("MsgCreacionExitosa", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a El editorial con código %s ya existe en el sistema..
+        /// </summary>
+        public static string MsgEditorialExistente {
+            get {
+                return ResourceManager.GetString("MsgEditorialExistente", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a La editorial no está registrada.
+        /// </summary>
+        public static string MsgEditorialNoExiste {
+            get {
+                return ResourceManager.GetString("MsgEditorialNoExiste", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a El libro con código %s ya existe en el sistema..
+        /// </summary>
+        public static string MsgLibroExistente {
+            get {
+                return ResourceManager.GetString("MsgLibroExistente", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a No es posible registrar el libro, se alcanzó el máximo permitido..
+        /// </summary>
+        public static string MsgMaximoAlcanzado {
+            get {
+                return ResourceManager.GetString("MsgMaximoAlcanzado", resourceCulture);
             }
         }
     }

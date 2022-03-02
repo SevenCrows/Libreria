@@ -10,7 +10,7 @@
     using Libreria.Transversal.Acciones.Repositorio;
     using Libreria.Transversal.DTO.Repositorio;
     using Libreria.Utilitario.Base;
-    using Libreria.Utilitario.BD;
+    using Libreria.Utilitario.Control.BD;
     using Microsoft.EntityFrameworkCore;
     public class EditorialDAL : ControlDatos<ContextoLibreria>, IEditorialAccion
     {
@@ -27,6 +27,18 @@
             {
                 Editorial entidad = Mapeador.MapearEntidadDTO(editorialDTO, new Editorial());
                 await this.contexto.Set<Editorial>().AddAsync(entidad);
+                contexto.SaveChanges();
+                return entidad;
+            });
+        }
+
+        public async Task<IEditorialDTO> EditarEditorial(IEditorialDTO editorialDTO)
+        {
+            return await this.EjecutarTransaccionDAL<IEditorialDTO, EditorialDAL>(async () =>
+            {
+                Editorial entidad = Mapeador.MapearEntidadDTO(editorialDTO, new Editorial());
+                contexto.Entry(entidad).State = EntityState.Modified;
+                contexto.SaveChanges();
                 return entidad;
             });
         }
