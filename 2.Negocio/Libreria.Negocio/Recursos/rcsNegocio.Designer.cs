@@ -61,7 +61,7 @@ namespace Libreria.Negocio.Recursos {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a El autor con identificación %s ya existe en el sistema..
+        ///   Busca una cadena traducida similar a El autor con identificación {0} ya existe en el sistema..
         /// </summary>
         public static string MsgAutorExistente {
             get {
@@ -97,7 +97,7 @@ namespace Libreria.Negocio.Recursos {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a El editorial con código %s ya existe en el sistema..
+        ///   Busca una cadena traducida similar a El editorial con código {0} ya existe en el sistema..
         /// </summary>
         public static string MsgEditorialExistente {
             get {
@@ -115,7 +115,7 @@ namespace Libreria.Negocio.Recursos {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a El libro con código %s ya existe en el sistema..
+        ///   Busca una cadena traducida similar a El libro con código {0} ya existe en el sistema..
         /// </summary>
         public static string MsgLibroExistente {
             get {

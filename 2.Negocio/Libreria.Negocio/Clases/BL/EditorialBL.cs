@@ -4,6 +4,7 @@
     using System.Collections.Generic;
     using System.Linq;
     using System.Threading.Tasks;
+    using Libreria.Datos.Clases.DAL.Repositorio;
     using Libreria.Negocio.Recursos;
     using Libreria.Transversal.Acciones.Repositorio;
     using Libreria.Transversal.DTO.Repositorio;
@@ -16,7 +17,7 @@
 
         public EditorialBL(Lazy<IEditorialAccion> argRepositorioAccion = null)
         {
-            this.repositorioEditorial = argRepositorioAccion ?? new Lazy<IEditorialAccion>();
+            this.repositorioEditorial = argRepositorioAccion ?? new Lazy<IEditorialAccion>(() => new EditorialDAL());
         }
 
         public async Task<Respuesta<IEditorialDTO>> AgregarNuevoEditorial(IEditorialDTO editorialDTO)

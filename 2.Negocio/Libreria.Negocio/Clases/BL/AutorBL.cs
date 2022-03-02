@@ -4,6 +4,7 @@
     using System.Collections.Generic;
     using System.Linq;
     using System.Threading.Tasks;
+    using Libreria.Datos.Clases.DAL.Repositorio;
     using Libreria.Negocio.Clases.BO;
     using Libreria.Negocio.Recursos;
     using Libreria.Transversal.Acciones.Repositorio;
@@ -17,7 +18,7 @@
 
         public AutorBL(Lazy<IAutorAccion> argRepositorioAccion = null)
         {
-            this.repositorioAutor = argRepositorioAccion ?? new Lazy<IAutorAccion>();
+            this.repositorioAutor = argRepositorioAccion ?? new Lazy<IAutorAccion>(()=> new AutorDAL());
         }
 
         public async Task<Respuesta<IAutorDTO>> AgregarNuevoAutor(IAutorDTO autorDTO)
@@ -42,7 +43,7 @@
                     return respuesta;
 
                 }
-                catch (Exception)
+                catch (Exception ex)
                 {
                     respuesta.Mensajes = new List<string> { rcsNegocio.MsgCreacionError };
                     return respuesta;

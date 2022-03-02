@@ -10,8 +10,5 @@
         public int Anio { get; set; }
         public long EditorialId { get; set; }
         public long AutorId { get; set; }
-
-        public virtual Editorial Id1 { get; set; }
-        public virtual Autor IdNavigation { get; set; }
     }
 }

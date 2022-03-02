@@ -4,6 +4,8 @@
     using System.Linq;
     using System.Linq.Expressions;
     using System.Reflection;
+    using Newtonsoft.Json;
+
     public static class Mapeador
     {
         public static TDestino MapearEntidadDTO<TOrigen, TDestino>(this TOrigen origen, TDestino destino)
@@ -29,6 +31,13 @@
                     propiedadDestino.SetValue(destino, propiedadOrigen.GetValue(origen));
                 }
             }
+            return destino;
+        }
+
+        public static T MapearObjetoPorJson<T>(this object origen) where T : class, new()
+        {
+            T destino = new T();
+            destino = JsonConvert.DeserializeObject<T>(JsonConvert.SerializeObject(origen));
             return destino;
         }
 

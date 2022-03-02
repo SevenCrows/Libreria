@@ -11,7 +11,7 @@
     {
         public ControlAPI() { }
 
-        public async Task<T> EjecutarTransaccionAPIAsync<T, C>(Func<Task<T>> cuerpoEjecutar) where C : class
+        public async Task<T> EjecutarTransaccionAPI<T, C>(Func<Task<T>> cuerpoEjecutar) where C : class
         {
             var cuerpoSolicitud = this.GetBody(HttpContext.Request);
             try
