@@ -25,7 +25,7 @@
         public async Task<Respuesta<IAutorDTO>> CrearAutor(Model.Autor autor)
         {
             return await this.EjecutarTransaccionAPI<Respuesta<IAutorDTO>, AutorController>(async () =>
-            {                
+            {
                 return await this.negocioAutor.Value.AgregarNuevoAutor(Mapeador.MapearObjetoPorJson<Model.Autor>(autor));
             });
         }
