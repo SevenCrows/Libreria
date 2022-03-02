@@ -1,6 +1,8 @@
-﻿namespace Libreria.Datos.Repositorio
+﻿namespace Libreria.Api.Model
 {
-    public partial class Libro
+    using Libreria.Transversal.DTO.Repositorio;
+
+    public class Libro : ILibroDTO
     {
         public long Id { get; set; }
         public int Codigo { get; set; }

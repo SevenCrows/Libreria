@@ -136,18 +136,6 @@
                     .HasMaxLength(250)
                     .IsUnicode(false)
                     .HasColumnName("titulo");
-
-                entity.HasOne(d => d.IdNavigation)
-                    .WithOne(p => p.Libro)
-                    .HasForeignKey<Libro>(d => d.Id)
-                    .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK_libro_autor");
-
-                entity.HasOne(d => d.Id1)
-                    .WithOne(p => p.Libro)
-                    .HasForeignKey<Libro>(d => d.Id)
-                    .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK_libro_editorial");
             });
 
             OnModelCreatingPartial(modelBuilder);

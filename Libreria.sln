@@ -13,15 +13,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.Transversal", "4.Transver
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5.Utilitario", "5.Utilitario", "{31220CB9-72E1-44A6-A0B4-3A32D3A7BD51}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Libreria.Api", "1.Api\Libreria.Api\Libreria.Api.csproj", "{7091DC85-E2FC-4761-A3CC-3D3CF921EEF4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Libreria.Api", "1.Api\Libreria.Api\Libreria.Api.csproj", "{7091DC85-E2FC-4761-A3CC-3D3CF921EEF4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Libreria.Negocio", "2.Negocio\Libreria.Negocio\Libreria.Negocio.csproj", "{44F82B35-7FAC-4191-88D0-4A4A1C9F0A7B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Libreria.Negocio", "2.Negocio\Libreria.Negocio\Libreria.Negocio.csproj", "{44F82B35-7FAC-4191-88D0-4A4A1C9F0A7B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Libreria.Datos", "3.Datos\Libreria.Datos\Libreria.Datos.csproj", "{626E1030-C8CF-4EFD-9350-E40B9AAE0A85}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Libreria.Datos", "3.Datos\Libreria.Datos\Libreria.Datos.csproj", "{626E1030-C8CF-4EFD-9350-E40B9AAE0A85}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Libreria.Transversal", "4.Transversal\Libreria.Transversal\Libreria.Transversal.csproj", "{59A0D766-12EC-48BF-9801-44883B081B98}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Libreria.Transversal", "4.Transversal\Libreria.Transversal\Libreria.Transversal.csproj", "{59A0D766-12EC-48BF-9801-44883B081B98}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Libreria.Utilitario", "5.Utilitario\Libreria.Utilitario\Libreria.Utilitario.csproj", "{23E6C39A-B48F-436A-926B-02F76073E89C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Libreria.Utilitario", "5.Utilitario\Libreria.Utilitario\Libreria.Utilitario.csproj", "{23E6C39A-B48F-436A-926B-02F76073E89C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
