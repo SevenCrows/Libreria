@@ -1,9 +1,7 @@
 ﻿namespace Libreria.Utilitario.BD
 {
     using System;
-    using System.Text;
     using System.Threading.Tasks;
-    using System.Transactions;
     using Libreria.Utilitario.Recursos;
     using Microsoft.EntityFrameworkCore;
 
