@@ -4,4 +4,24 @@
     <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\4.Transversal\Libreria.Transversal\Libreria.Transversal.csproj" />
+    <ProjectReference Include="..\..\5.Utilitario\Libreria.Utilitario\Libreria.Utilitario.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Recursos\rcsNegocio.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>rcsNegocio.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Recursos\rcsNegocio.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>rcsNegocio.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
 </Project>

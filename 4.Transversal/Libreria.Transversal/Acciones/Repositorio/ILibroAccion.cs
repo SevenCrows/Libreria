@@ -5,6 +5,7 @@
     using System.Linq.Expressions;
     using System.Threading.Tasks;
     using Libreria.Transversal.DTO.Repositorio;
+    using Libreria.Utilitario.Base;
 
     public interface ILibroAccion
     {
@@ -14,6 +15,6 @@
 
     public interface ILibroNegocioAccion
     {
-
+        Task<Respuesta<ILibroDTO>> AgregarNuevoLibro(ILibroDTO editorialDTO);
     }
 }
